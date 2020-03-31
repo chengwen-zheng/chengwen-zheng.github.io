@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>node之express | leon&#39;blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="title: node之expressdate: 2017-05-28 14:58:13tags:categories:  code  Node之express什么是expressExpress 是一个基于 Node.js 平台的极简、灵活的 web 应用开发框架，它提供一系列强大的特性，帮助你创建各种 Web 和移动设备应用。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="node之express">
+<meta property="og:url" content="http://chengwen-zheng.github.io/2020/03/31/node%E4%B9%8Bexpress/index.html">
+<meta property="og:site_name" content="leon&#39;blog">
+<meta property="og:description" content="title: node之expressdate: 2017-05-28 14:58:13tags:categories:  code  Node之express什么是expressExpress 是一个基于 Node.js 平台的极简、灵活的 web 应用开发框架，它提供一系列强大的特性，帮助你创建各种 Web 和移动设备应用。">
+<meta property="article:published_time" content="2020-03-31T15:16:45.000Z">
+<meta property="article:modified_time" content="2020-03-31T15:40:33.506Z">
+<meta property="article:author" content="leon">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="leon&#39;blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">leon&#39;blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://chengwen-zheng.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-node之express" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/03/31/node%E4%B9%8Bexpress/" class="article-date">
+  <time datetime="2020-03-31T15:16:45.000Z" itemprop="datePublished">2020-03-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      node之express
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<p>title: node之express<br>date: 2017-05-28 14:58:13<br>tags:<br>categories:<br>  code</p>
+<hr>
+<h2 id="Node之express"><a href="#Node之express" class="headerlink" title="Node之express"></a>Node之express</h2><h3 id="什么是express"><a href="#什么是express" class="headerlink" title="什么是express"></a>什么是express</h3><p>Express 是一个基于 Node.js 平台的极简、灵活的 web 应用开发框架，它提供一系列强大的特性，帮助你创建各种 Web 和移动设备应用。</p>
+<a id="more"></a>
+<h3 id="express之hello-world"><a href="#express之hello-world" class="headerlink" title="express之hello world"></a>express之hello world</h3><ol>
+<li>引入模块<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">let express &#x3D; require(&quot;express&quot;)</span><br></pre></td></tr></table></figure></li>
+<li>express之中间件<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> &lt;!-- express 和上面的模块名对应  --&gt;</span><br><span class="line">express.use();</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h3 id="express之静态服务"><a href="#express之静态服务" class="headerlink" title="express之静态服务"></a>express之静态服务</h3><ol>
+<li>将静态资源文件所在的目录作为参数传递给express.static中间件就可以提供静态资源文件的访问<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app.use(static(&quot;pubic&quot;))</span><br></pre></td></tr></table></figure></li>
+<li>可以创建多个静态资源文件目录，多次调用express.static();<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">app.use(express.static(&#39;public&#39;));</span><br><span class="line">app.use(express.static(&#39;files&#39;));</span><br></pre></td></tr></table></figure></li>
+<li>如果你希望所有通过 express.static 访问的文件都存放在一个“虚拟（virtual）”目录（即目录根本不存在）下面，可以通过为静态资源目录指定一个挂载路径的方式来实现，如下所示 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app.use(&#39;&#x2F;static&#39;, express.static(&#39;public&#39;));</span><br></pre></td></tr></table></figure>
+现在,可以通过带有 “/static” 前缀的地址来访问 public 目录下面的文件了;<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http:&#x2F;&#x2F;localhost:3000&#x2F;static&#x2F;images&#x2F;kitten.jpg</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h3 id="express之路由"><a href="#express之路由" class="headerlink" title="express之路由"></a>express之路由</h3><ol>
+<li><p>路由是指如何定义应用的端点（URIs）以及如何响应客户端的请求。<br>路由是由一个 URI、HTTP 请求（GET、POST等）和若干个句柄组成，它的结构如下： app.METHOD(path, [callback…], callback)， app 是 express 对象的一个实例， METHOD 是一个 HTTP 请求方法， path 是服务器上的路径， callback 是当路由匹配时要执行的函数。 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">let express &#x3D; require(&#39;express&#39;)</span><br><span class="line">var app &#x3D; express()</span><br><span class="line">app.get(&#39;&#x2F;&#39;, function(req, res) &#123;</span><br><span class="line">    res.send(&#39;hello world&#39;)</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></li>
+<li><p>路由方法:路由方法源于 HTTP 请求方法，和 express 实例相关联。<br>注意：app.all() 是一个特殊的路由方法，没有任何 HTTP 方法与其对应，它的作用是对于一个路径上的所有请求加载中间件。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">app.all(&#39;&#x2F;secret&#39;, function (req, res, next) &#123;</span><br><span class="line">  console.log(&#39;Accessing the secret section ...&#39;);</span><br><span class="line">  next(); &#x2F;&#x2F; pass control to the next handler</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></li>
+<li><p>路由路径<br>使用字符串模式的路由路径示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">   &#x2F;&#x2F;?表示前面的字符0到1次</span><br><span class="line">app.get(&#39;&#x2F;ab?cd&#39;, function(req, res) &#123;</span><br><span class="line">    res.send(&#39;ab?cd&#39;);</span><br><span class="line">&#125;);</span><br><span class="line">&#x2F;&#x2F; *  表示0到多次</span><br><span class="line">app.get(&#39;&#x2F;ab*cd&#39;, function(req, res) &#123;</span><br><span class="line">    res.send(&#39;ab*cd&#39;);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; ()表示分组</span><br><span class="line">app.get(&#39;&#x2F;ab(cd)?e&#39;, function(req, res) &#123;</span><br><span class="line">    res.send(&#39;ab(cd)?e&#39;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></li>
+<li><p>app.route()<br>可使用 app.route() 创建路由路径的链式路由句柄。由于路径在一个地方指定，这样做有助于创建模块化的路由，而且减少了代码冗余和拼写错误。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">app.route(&#39;&#x2F;book&#39;)</span><br><span class="line">.get(function(req, res) &#123;</span><br><span class="line">  res.send(&#39;Get a random book&#39;);</span><br><span class="line">&#125;)</span><br><span class="line">.post(function(req, res) &#123;</span><br><span class="line"> res.send(&#39;Add a book&#39;);</span><br><span class="line">&#125;)</span><br><span class="line">.put(function(req, res) &#123;</span><br><span class="line"> res.send(&#39;Update the book&#39;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></li>
+<li><p>express.Router<br> 可使用 express.Router 类创建模块化、可挂载的路由句柄。Router 实例是一个完整的中间件和路由系统，因此常称其为一个 “mini-app”。<br> 下面的实例程序创建了一个路由模块，并加载了一个中间件，定义了一些路由，并且将它们挂载至应用的路径上。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;路由模块</span><br><span class="line">const express  &#x3D; require(&quot;express&quot;);</span><br><span class="line">let router &#x3D; express.Router();</span><br><span class="line">router.get(&quot;&#x2F;user&quot;,(req,res)&#x3D;&gt;&#123;</span><br><span class="line">    res.end(&quot;get data&quot;);</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">router.post(&quot;&#x2F;user&quot;,(req,res)&#x3D;&gt;&#123;</span><br><span class="line">    res.end(&quot;post data&quot;);</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">router.put(&quot;&#x2F;user&quot;,(req,res)&#x3D;&gt;&#123;</span><br><span class="line">    res.end(&quot;put data&quot;);</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">router.delete(&quot;&#x2F;user&quot;,(req,res)&#x3D;&gt;&#123;</span><br><span class="line">    res.end(&quot;delete data&quot;);</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">module.exports &#x3D; router;</span><br></pre></td></tr></table></figure>
+<p>引用路由模块</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">const express &#x3D; require(&#39;express&#39;);</span><br><span class="line">const router &#x3D; require(&quot;.&#x2F;router.js&quot;)</span><br><span class="line">const app &#x3D; express();</span><br><span class="line"></span><br><span class="line">app.use(express.static(&quot;pubic&quot;));</span><br><span class="line">&#x2F;&#x2F;在应用中加载路由模块</span><br><span class="line">app.use(router);</span><br><span class="line">app.listen(3000,()&#x3D;&gt;&#123;</span><br><span class="line">    console.log(&quot;running。。。。&quot;);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h3 id="express之中间件"><a href="#express之中间件" class="headerlink" title="express之中间件"></a>express之中间件</h3></li>
+<li><p>什么叫中间件<br>中间件（Middleware） 是一个函数，它可以访问请求对象（request object (req)）, 响应对象（response object (res)）, 和 web 应用中处于请求-响应循环流程中的中间件，一般被命名为 next 的变量。</p>
+</li>
+<li><p>中间件的功能和分类</p>
+<p> 功能:</p>
+<pre><code>1. 执行任何代码。
+
+2. 修改请求和响应对象。
+
+3. 终结请求-响应循环。
+
+4. 调用堆栈中的下一个中间件。</code></pre><p> 分类:</p>
+<pre><code>1. 应用级中间件。
+
+2. 路由级中间件。
+
+3. 错误处理中间件。
+
+4. 内置中间件。
+
+5. 第三方中间件。 </code></pre></li>
+<li><p>更多细节请见官方文档        </p>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://chengwen-zheng.github.io/2020/03/31/node%E4%B9%8Bexpress/" data-id="ck8g2m3wh00005kvk9dvo7cnp" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/03/31/node%E4%B9%8Bexpress/">node之express</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 leon<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
