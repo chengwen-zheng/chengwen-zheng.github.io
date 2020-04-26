@@ -1,0 +1,167 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>Ajax | leon'blog</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.1/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.1/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.4.1/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><script type="text/javascript" src="//lib.baomitu.com/clipboard.js/2.0.4/clipboard.min.js"></script><script type="text/javascript" src="//lib.baomitu.com/toastr.js/2.1.4/toastr.min.js"></script><link rel="stylesheet" href="//lib.baomitu.com/toastr.js/2.1.4/toastr.min.css"><meta name="generator" content="Hexo 4.2.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Ajax</h1><a id="logo" href="/.">leon'blog</a><p class="description"></p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> Home</i></a><a href="/archives/"><i class="fa fa-archive"> Archive</i></a><a href="/about/"><i class="fa fa-user"> About</i></a><a href="/atom.xml"><i class="fa fa-rss"> RSS</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">Ajax</h1><div class="post-meta">2020-04-26</div><div class="post-content"><h2 id="AJAX"><a href="#AJAX" class="headerlink" title="AJAX"></a>AJAX</h2><h4 id="AJAX并不是一门新技术，而是多种技术的结合体"><a href="#AJAX并不是一门新技术，而是多种技术的结合体" class="headerlink" title="AJAX并不是一门新技术，而是多种技术的结合体"></a>AJAX并不是一门新技术，而是多种技术的结合体</h4><ul>
+<li><p>一些有趣的事</p>
+<ol>
+<li><p>AJAX 不是新的编程语言，而是一种使用已有标准的新概念</p>
+</li>
+<li><p>2005年由美国人Jesse James Garrett推广，并取名。<br>  神奇的是，这哥们并不是搞程序的，而是搞设计的，是交互设计大师、用户体验大师。甚至是个优秀建筑设计师。 </p>
+</li>
+<li><p>在 2005 年，Google 通过其 Google Suggest 使 AJAX 变得流行起来。</p>
+</li>
+<li><p>在今天，很少有哪个网站不使用Ajax技术</p>
+</li>
+<li><p>Ajax技术对智能手机支持非常好。</p>
+</li>
+<li><p>Ajax中字母x表示XML，实际上XML已经过时，现在的公司，几乎全都在使用JSON代替XML。所以理论上讲，应该称呼为Ajaj，不过，呃，这个词儿，长得好难看。</p>
+</li>
+</ol>
+</li>
+<li><p>AJAX 是一个什么东西<br>   在不刷新页面的情况下，<br>   浏览器悄悄地、异步地向服务器发出HTTP请求。<br>   服务器收到请求后，传回新的格式化数据回来（通常是JSON）。<br>   浏览器解析JSON，通过DOM将新数据呈递显示，页面仅局部刷新。</p>
+</li>
+</ul>
+<h4 id="服务器与客户端"><a href="#服务器与客户端" class="headerlink" title="服务器与客户端"></a>服务器与客户端</h4><ol>
+<li><p>服务器和客户端说白了，都是电脑</p>
+</li>
+<li><p>服务器：能够提供某种服务的机器（计算机）</p>
+</li>
+<li><p>客户端：具有向服务器索取服务能力的终端</p>
+</li>
+<li><p>服务器类型：<br>  a、按服务类型可分为：文件服务器、数据库服务器、邮件服务器、Web 服务器等；<br>b、按操作系统可分为：Linux服务器、Windows服务器等<br>c、按应用软件可分为 Apache服务器、Nginx 服务器、IIS服务器、Tomcat服务器、Node服务器等</p>
+</li>
+<li><p>服务器软件<br>定义：使计算机具备提供某种服务能力的应用软件，称为服务器软件，通过安装相应的服务软件，然后进行配置后就可以使计算具备了提供某种服务的能力。</p>
+<p>常见的服务器软件：<br>a、文件服务器：Server-U、FileZilla、VsFTP等<br>b、数据库服务器：Oracle、MySQL、PostgreSQL、MSSQL<br>c、邮件服务器：Postfix、Sendmail<br>d、HTTP 服务器：Apache、Nginx、IIS、Tomcat、NodeJS</p>
+</li>
+</ol>
+<h4 id="基础知识铺垫-网络相关概念"><a href="#基础知识铺垫-网络相关概念" class="headerlink" title="基础知识铺垫-网络相关概念"></a>基础知识铺垫-网络相关概念</h4><ol>
+<li><p>什么是IP地址，如何查看IP<br>所谓IP地址就是给每个连接在互联网上的主机分配的一个32位地址。<br>查看本机的IP： ipconfig 或者ipconfig -all<br>查看域名的IP： ping</p>
+</li>
+<li><p>域名<br>由于IP地址是基于数字，不方便记忆，于是便用域名来代替IP地址，<br>说百了，域名就是方便IP的的别名，替代品</p>
+</li>
+<li><p>DNS以及查找的规则<br>记录了 IP 地址和域名的映射（对应）关系。<br>查找优先级 本机hosts文件、DNS服务器</p>
+</li>
+<li><p>端口<br>端口是计算机与外界通讯交流的出口，每个端口对应不同的服务。<br>说白了就是服务所对应的出口。</p>
+</li>
+<li><p>一个域名可以对应多个IP<br>但是一个IP只能对应一个域名</p>
+</li>
+</ol>
+<h4 id="通信协议"><a href="#通信协议" class="headerlink" title="通信协议"></a>通信协议</h4><ol>
+<li><p>常见的通信协议<br>a、HTTP、HTTPS 超文本传输协议   —-  默认http是80端口,https是443端口<br>b、FTP 文件传输协议 —- 默认是 21 端口<br>c、SMTP 简单邮件传输协议  —- 默认是 25 端口</p>
+</li>
+<li><p>HTTP协议<br>即超文本传输协议，网站是基于HTTP协议的。<br>HTTP协议是由从客户机到服务器的请求(Request)和从服务器到客户机的响应(Response)进行了约束和规范。<br>即HTTP协议主要由请求和响应构成。</p>
+</li>
+<li><p>HTTPS协议<br>以安全为目标的HTTP通道，简单讲是HTTP的安全版。<br>即HTTP下加入SSL层，HTTPS的安全基础是SSL，因此加密的详细内容就需要SSL。<br>SSL即安全套接层，是为网络通信提供安全及数据完整性的一种安全协议。</p>
+<p>详细了解：百度百科（<a href="https://baike.baidu.com/）" target="_blank" rel="noopener">https://baike.baidu.com/）</a></p>
+</li>
+<li><p>C/S 和 B/S — 网络结构模式</p>
+<p>C/S — 客户机和服务器模式 — 例如QQ、迅雷<br>B/S — 浏览器和服务器模式 — 例如OA、网页版QQ、网页版263邮箱</p>
+<p>但要注意：<br>B/S是基于特定通信协议(HTTP)的C/S架构，也就是说B/S包含在C/S中，是特殊的C/S架构。<br>B/S属于C/S，浏览器只是特殊的客户端，本质上开发浏览器，还是实现一个C/S系统。</p>
+<p>详细了解：百度百科（<a href="https://baike.baidu.com/）" target="_blank" rel="noopener">https://baike.baidu.com/）</a></p>
+</li>
+</ol>
+<h4 id="原生Ajax实现页面局部更新"><a href="#原生Ajax实现页面局部更新" class="headerlink" title="原生Ajax实现页面局部更新"></a>原生Ajax实现页面局部更新</h4><p>  什么是Ajax<br>  在不刷新页面的情况下，浏览器悄悄地、异步地向服务器发出HTTP请求。<br>  服务器收到请求后，传回新的格式化数据回来（通常是JSON）。<br>  浏览器解析JSON，通过DOM将新数据呈递显示，页面仅局部刷新</p>
+<h4 id="原生Ajax详解-xhr对象创建"><a href="#原生Ajax详解-xhr对象创建" class="headerlink" title="原生Ajax详解-xhr对象创建"></a>原生Ajax详解-xhr对象创建</h4><ol>
+<li>标准下 — xhr = new XMLHttpRequest();</li>
+<li>IE6   — xhr = new ActiveXObject(‘Microsoft.XMLHTTP’);</li>
+</ol>
+<h4 id="原生Ajax详解-请求参数分析"><a href="#原生Ajax详解-请求参数分析" class="headerlink" title="原生Ajax详解-请求参数分析"></a>原生Ajax详解-请求参数分析</h4><ol>
+<li><p>open()方法,调用open方法并不会真正发送请求，而只是启动一个请求以备发送。</p>
+<p>   参数一： 请求方式（get获取数据，post提交数据）；<br>   参数二： 请求的地址<br>   参数三： 同步或者异步标识位，默认是true标识true，false表示</p>
+<pre><code>注意：如果是get请求，那么请求参数必须在url中传递
+     encodeURI()用来对中文参数进行编码，防止乱码。</code></pre></li>
+<li><p>send()方法<br>  要发送特定的请求，需要调用send()方法。<br>  它接受一个参数，即要作为请求主体发送的数据。<br>  如果不需要通过请求主体发送数据，则必须传入null，不能留空。<br>  如果要发送请求，用send()方法。</p>
+<pre><code>get请求这里需要添加null参数</code></pre></li>
+</ol>
+<ol start="3">
+<li><p>post请求参数通过send传递，不需要通过encodeURI()转码</p>
+<pre><code>但是必须需要设置请求头参数</code></pre></li>
+<li><p>xhr对象有一个重要的属性，就是readyState属性，表示“就绪状态”,就是xhr.readyState,readyState取值只有5种值：0、1、2、3、4.</p>
+<pre><code>- 0 (uninitialized)  未初始化
+- 1 (loading)      XMLHttpRequest对象正在加载
+- 2 (loaded)     XMLHttpRequest对象加载完毕
+- 3 (interactive)    正在传输数据
+- 4 (complete)     全部完成</code></pre></li>
+<li><p>只要readyState属性值发生了变化，就会触发一个事件onreadystatechange事件。<br>此时，可以用xhr.onreadystatechange = function(){}来捕获readyState改变之后做的事情。</p>
+</li>
+<li><p>Ajax一旦用send方法发出HTTP请求之后,当readyState为4的时候，就会有一个属性产生 — xhr.status,表示的是请求的文件的状态码</p>
+<ul>
+<li>1**  —-  消息</li>
+<li>2**  —-  代码请求成功</li>
+<li>3**  —-  重定向</li>
+<li>4**  —-  请求错误</li>
+<li>5**  —-  服务器错误</li>
+<li>6**  —-  其它</li>
+</ul>
+</li>
+</ol>
+<h4 id="原生Ajax详解-同源策略"><a href="#原生Ajax详解-同源策略" class="headerlink" title="原生Ajax详解-同源策略"></a>原生Ajax详解-同源策略</h4><p>什么是跨域<br>  同源策略是浏览器的一种安全策略，所谓同源指的是请求URL地址中的协议、域名和端口号都相同，只要其中之一不相同就是跨域。<br>  同源策略主要是为了保证浏览器的安全性<br>  在同源策略下，浏览器不允许Ajax跨域获取服务器数据</p>
+<p>  说简单点：跨域是指从一个域名的网页去请求另一个域名的资源。只要协议、域名、端口有任何一个的不同，就被当作是跨域。<br>跨域解决方案</p>
+<ol>
+<li><p>jsonp</p>
+</li>
+<li><p>document.domain + iframe</p>
+</li>
+<li><p>location.hash + iframe</p>
+</li>
+<li><p>window.name + iframe</p>
+</li>
+<li><p>window.postMessage</p>
+</li>
+<li><p>flash 等第三方插件</p>
+</li>
+<li><p>Ajax本身开始支持跨域(cross-origin- resource sharing)</p>
+<p>99%的公司都在使用jsonp。</p>
+<p>注：前端解决跨域问题的8种方案<br><a href="http://www.cnblogs.com/JChen666/p/3399951.html" target="_blank" rel="noopener">http://www.cnblogs.com/JChen666/p/3399951.html</a> </p>
+<h4 id="原生Ajax详解-JSONP的原理"><a href="#原生Ajax详解-JSONP的原理" class="headerlink" title="原生Ajax详解-JSONP的原理"></a>原生Ajax详解-JSONP的原理</h4><p>动态创建script标签，通过标签的src属性发送请求<br>动态创建script标签发出去的请求是异步请求<br>服务器响应的内容【函数调用】</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">  &#x2F;*这是jquery中jsonp简单版模块*&#x2F;</span><br><span class="line">  (function(window)&#123;</span><br><span class="line">    Leon.extend(&#123;</span><br><span class="line">        ajaxjsonp:function(defalults)&#123;</span><br><span class="line">          var bkName &#x3D;&#39;jQuery&#39; + (&#39;1.11.1&#39; + Math.random()).replace(&#x2F;\D&#x2F;g,&quot;&quot;) +     &#39;_&#39; + (new Date().getTime());</span><br><span class="line">          if(defaults.jsonpcallback)&#123;</span><br><span class="line">            bkName &#x3D; defaults.jsonpcallback ;</span><br><span class="line">          &#125;</span><br><span class="line">          &#x2F;*回调函数*&#x2F;</span><br><span class="line">          window[bkName] &#x3D; function (data)&#123;</span><br><span class="line">            defaults.success(data);</span><br><span class="line">          &#125;</span><br><span class="line">        </span><br><span class="line">          &#x2F;*data拼接*&#x2F;</span><br><span class="line">          var parm &#x3D;&#39;&#39;;</span><br><span class="line">          for(var j in defaults.data)&#123;</span><br><span class="line">            parm +&#x3D; &#39;&amp;&#39; + j + &quot;&#x3D;&quot; + defaults.data[j]; </span><br><span class="line">          &#125;</span><br><span class="line">        </span><br><span class="line">          &#x2F;*动态创建script*&#x2F;</span><br><span class="line">          var script &#x3D; document.createElement(&quot;script&quot;);</span><br><span class="line">          script.src &#x3D; defaults.url + &quot;?&quot; +defaults.jsonp +&#39;&#x3D;&#39;+bkName + parm;</span><br><span class="line">          var head &#x3D; document.getElementsByTagName(&#39;head&#39;)[0];</span><br><span class="line">          head.appendChild(script); </span><br><span class="line">        &#125;</span><br><span class="line">      &#125;);</span><br><span class="line">&#125;)(window);</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+<h4 id="原生Ajax详解-数据格式-xml"><a href="#原生Ajax详解-数据格式-xml" class="headerlink" title="原生Ajax详解-数据格式(xml)"></a>原生Ajax详解-数据格式(xml)</h4><p><strong>什么是XML</strong></p>
+<p>  1、XML指可扩展的标记语言<br>  2、主要用来输出和存储数据 — 注意：设置宗旨是【传输数据】，而非显示数据<br>  3、XML标签没有预定义，需要自行定义标签 — 就是说XML具有自我描述性</p>
+<p><strong>XML 数据格式的缺点</strong></p>
+<p>  1、元数据占用的数据量比较大，不利于大量数据的网络传输<br>  2、解析不太方便</p>
+<p><strong>XML和HTML的区别</strong></p>
+<p>  1、XML是用来传输和存储数据的，而HTML被设计是用来显示数据的<br>  2、XML旨在传输数据，HTML旨在显示信息</p>
+<p><strong>XML的树结构</strong></p>
+<p>  1、XML 文档形成了的也是一种“树结构”，<br>  2、<strong>【XML文档必须包含根元素】</strong>。该元素是所有其他元素的父元素。树结构从根部开始，扩展到最低端</p>
+<p><strong>XML的语法</strong></p>
+<p>  1、所有XML元素都必须都闭合标签<br>  2、XML标签对大小写敏感，因此必须使用相同的大小写来编写打开标签和关闭标签<br>  3、XML必须正确地嵌套<br>  4、XML 文档必须有根元素<br>  5、XML 的属性值须加引号<br>  6、XML 中的注释 — &lt;!– … –&gt;<br>  7、在 XML 中，空格会被保留<br>  8、一些特殊符号需要用实体引用</p>
+<h4 id="原生Ajax详解-数据格式-json"><a href="#原生Ajax详解-数据格式-json" class="headerlink" title="原生Ajax详解-数据格式 (json)"></a>原生Ajax详解-数据格式 (json)</h4><ul>
+<li><p>什么是JSON</p>
+<ul>
+<li>JavaScript 对象表示法</li>
+<li>是存储和交换文本信息的语法</li>
+<li>轻量级的文本数据交换格式</li>
+</ul>
+</li>
+<li><p>JSON数据和普通的JS兑现的区别</p>
+<ul>
+<li>json 对象没有变量</li>
+<li>json 形式的数据结尾没有分号</li>
+<li>json 数据中的键必须用双引号包括</li>
+</ul>
+</li>
+<li><p>JSON和XML对比</p>
+<ul>
+<li>JSON 比 XML 更小、更快，更易解析</li>
+</ul>
+</li>
+<li><p>把JSON文本转换为JavaScript对象</p>
+<ul>
+<li>JSON 最常见的用法之一，是从 web 服务器上读取 JSON 数据（作为文件或作为 HttpRequest），将 JSON 数据转换为 JavaScript 对象，然后在网页中使用该数据。</li>
+</ul>
+</li>
+<li><p>为什么要转换</p>
+<ul>
+<li>在数据传输过程中，json是以文本，即字符串的形式传递的，而JS操作的是JSON对象，所以，JSON对象和JSON字符串之间的相互转换是关键。</li>
+</ul>
+</li>
+<li><p>转换的方法</p>
+<ul>
+<li>JSON_parse()       — 把json形式的字符串转成对象</li>
+<li>JSON_stringify()   — 把对象转成字符串</li>
+<li>eval()       — 把字符串解析成JS代码并执行</li>
+</ul>
+</li>
+</ul>
+</div><div class="tags"></div><div class="post-nav"><a class="pre" href="/2020/04/26/redux%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/">redux源码解析</a><a class="next" href="/2020/04/26/FP/">FP</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="http://chengwen-zheng.github.io"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> Categories</i></div></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> Tags</i></div><div class="tagcloud"><a href="/tags/about/" style="font-size: 15px;">about</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> Recent</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2020/04/26/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%9D%E6%B6%89/">数据库初涉</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/04/26/webpack%E5%88%9D%E6%B6%89/">webpack初涉</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/04/26/redux%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/">redux源码解析</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/04/26/Ajax/">Ajax</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/04/26/FP/">FP</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/04/26/node%E4%B9%8Bexpress/">node之express</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> Links</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2020 <a href="/." rel="nofollow">leon'blog.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js" successtext="Copy Successed!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
